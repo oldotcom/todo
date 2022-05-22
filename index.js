@@ -1,3 +1,7 @@
+const todosNode = document.querySelector('.js-todos');
+const inputNode = document.querySelector('.js-input');
+const btnNode = document.querySelector('.js-btn');
+
 let todos = [];
 
 function addTodo (text) {
@@ -20,7 +24,21 @@ function deleteTodo(id) {
 
 function render() {
     console.log(todos);
+    let html = '';
+
+    todos.forEach(todo => {
+        if (todo.done) {
+            return;
+        }
+
+        html += `
+            <div>${todo.text}</div>
+        `;
+    });
+
+    todosNode.innerHTML = html;
 }
 
 addTodo('Buy bread');
+addTodo('Buy milk');
 render();
