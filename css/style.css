@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin: 200px auto;
+    max-width: 580px;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(230, 230, 230);
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 30%);
+}
+
+.js-input {
+    padding-left: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    width: 85%;
+    font-size: 0.9rem;
+}
+
+.js-btn {
+    padding: 0 10px;
+    border: none;
+    font-size: 0.9rem;
+    background: none;
+    cursor: pointer;
+}
