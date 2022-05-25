@@ -32,9 +32,9 @@ function render() {
         }
 
         html += `
-            <div>
+            <div class="todos-item">
             ${todo.text}
-            <button data-id='${todo.id}'>del</button>
+            <button class="btn-item" data-id='${todo.id}'>del</button>
             </div>
         `;
     });

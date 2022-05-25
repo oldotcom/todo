@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-    margin: 200px auto;
+    margin: 150px auto;
     max-width: 580px;
 }
 
@@ -29,12 +29,35 @@
     border-radius: 50px;
     width: 85%;
     font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .js-btn {
     padding: 0 10px;
     border: none;
     font-size: 0.9rem;
+    font-weight: 400;
     background: none;
+    cursor: pointer;
+}
+
+.js-todos {
+    margin-top: 20px;
+}
+
+.todos-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-bottom: 1px solid #cccccc;
+}
+
+.btn-item {
+    padding: 8px;
+    border: none;
+    font-weight: 300;
     cursor: pointer;
 }
