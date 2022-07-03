@@ -12,6 +12,7 @@ function addTodo (text) {
     };
 
     todos.push(todo);
+    inputNode.value = '';
 }
 
 function deleteTodo(id) {
