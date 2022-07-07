@@ -54,12 +54,21 @@ btnNode.addEventListener('click', () => {
     render();
 });
 
-todosNode.addEventListener('click', (event) => {
-    if (event.target.tagName !== 'BUTTON') {
+inputNode.addEventListener('keyup', e => {
+    if (e.key === "Enter") {
+        const text = inputNode.value;
+
+        addTodo(text);
+        render();
+    }
+} );
+
+todosNode.addEventListener('click', e => {
+    if (e.target.tagName !== 'BUTTON') {
         return;
     }
 
-    const id = event.target.dataset.id;
+    const id = e.target.dataset.id;
 
     deleteTodo(id);
     render();
